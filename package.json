@@ -1,0 +1,24 @@
+{
+  "name": "sks_associates",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./css/tailwind.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/justinsteff/sks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/justinsteff/sks/issues"
+  },
+  "homepage": "https://bitbucket.org/justinsteff/sks#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
