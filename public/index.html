@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link href="/vite.svg" rel="icon" type="image/svg+xml" />
+    <link href="images/favicon.ico" rel="icon" type="image/svg+xml" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>SKS Associates - Trusted Accounting &amp; Tax Consultants in Coimbatore</title>
     <meta
@@ -70,50 +70,69 @@
 <body>
     <div id="root">
         <div class="min-h-screen">
-            <div class="bg-gray-800 text-white py-2">
+            <div class="bg-gray-800 text-white py-2 hidden md:block">
                 <div class="container mx-auto px-4 flex justify-between items-center text-sm">
                     <div class="flex items-center space-x-6"><a
                             class="flex items-center space-x-2 hover:text-teal-400 transition-colors cursor-pointer"
                             href="tel:+917339441279"><i class="ri-phone-line"></i><span>+91 73394-41279</span></a><a
                             class="flex items-center space-x-2 hover:text-teal-400 transition-colors cursor-pointer"
-                            href="mailto:info@sksassociates.com"><i
-                                class="ri-mail-line"></i><span>info@sksassociates.com</span></a></div>
+                            href="mailto:sangaiah2025@gmail.com"><i
+                                class="ri-mail-line"></i><span>sangaiah2025@gmail.com</span></a></div>
                     <div class="flex items-center space-x-4"><a
-                            class="hover:text-teal-400 transition-colors cursor-pointer" href="https://linkedin.com"
+                            class="hover:text-teal-400 transition-colors cursor-pointer" href="https://www.linkedin.com/in/sangaiah-s-90b439251"
                             rel="nofollow" target="_blank"><i class="ri-linkedin-fill"></i></a><a
                             class="hover:text-teal-400 transition-colors cursor-pointer"
-                            href="mailto:info@sksassociates.com"><i class="ri-mail-fill"></i></a></div>
+                            href="mailto:sangaiah2025@gmail.com"><i class="ri-mail-fill"></i></a></div>
                 </div>
             </div>
             <header class="bg-white shadow-lg sticky top-0 z-50">
-                <div class="container mx-auto px-4">
-                    <div class="flex items-center justify-between py-4">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center"><i
-                                    class="ri-calculator-line text-white text-xl"></i></div>
-                            <div>
-                                <h1 class="text-2xl font-bold text-gray-800" style="font-family: Pacifico, serif;">SKS
-                                    Associates</h1>
-                                <p class="text-sm text-gray-600">Accounting &amp; Tax Consultants</p>
-                            </div>
-                        </div>
-                        <nav class="hidden md:flex items-center space-x-8">
-                            <a href="#home"
-                                class="text-gray-700 hover:text-teal-600 font-medium transition-colors cursor-pointer whitespace-nowrap">Home</a>
-                            <a href="#about"
-                                class="text-gray-700 hover:text-teal-600 font-medium transition-colors cursor-pointer whitespace-nowrap">About</a><a href="#services"
-                                class="text-gray-700 hover:text-teal-600 font-medium transition-colors cursor-pointer whitespace-nowrap">Services</a><a href="#testimonials"
-                                class="text-gray-700 hover:text-teal-600 font-medium transition-colors cursor-pointer whitespace-nowrap">Testimonials</a><a href="#contact"
-                                class="text-gray-700 hover:text-teal-600 font-medium transition-colors cursor-pointer whitespace-nowrap">Contact</a><a href="#contact"
-                                class="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors cursor-pointer whitespace-nowrap">Get
-                                Consultation</a>
-                        </nav>
-                        <button class="md:hidden text-gray-700 cursor-pointer">
-                            <i class="ri-menu-line text-2xl"></i>
-                        </button>
-                    </div>
-                </div>
-            </header>
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center">
+          <i class="ri-calculator-line text-white text-xl"></i>
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold text-gray-800" style="font-family: Pacifico, serif;">SKS Associates</h1>
+          <p class="text-sm text-gray-600">Accounting &amp; Tax Consultants</p>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">About</a>
+        <a href="#services" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Services</a>
+        <a href="#testimonials" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Testimonials</a>
+        <a href="#contact" class="text-gray-700  hover:text-teal-600 font-medium transition-colors md:block lg:hidden">Contact</a>
+        <a href="#contact" class="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors md:hidden lg:block">
+          Get Consultation
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <i class="ri-menu-line text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200">
+    <nav class="flex flex-col space-y-4 p-4">
+      <a href="#home" class="text-gray-700 hover:text-teal-600 font-medium">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-teal-600 font-medium">About</a>
+      <a href="#services" class="text-gray-700 hover:text-teal-600 font-medium">Services</a>
+      <a href="#testimonials" class="text-gray-700 hover:text-teal-600 font-medium">Testimonials</a>
+      <!-- <a href="#contact" class="text-gray-700 hover:text-teal-600 font-medium">Contact</a> -->
+      <a href="#contact" class="bg-teal-600 text-white text-center px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors">
+        Get Consultation
+      </a>
+    </nav>
+  </div>
+</header>
+
             <main>
                 <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat" id="home"
                     style='background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("images/banner.jpg");'>
@@ -639,7 +658,7 @@
                                         <div>
                                             <h6 class="font-semibold text-gray-800 mb-1">Email Address</h6><a
                                                 class="text-teal-600 hover:text-teal-700 cursor-pointer"
-                                                href="mailto:info@sksassociates.com">info@sksassociates.com</a>
+                                                href="mailto:sangaiah2025@gmail.com">sangaiah2025@gmail.com</a>
                                         </div>
                                     </div>
                                     <div class="flex items-start space-x-4">
@@ -678,7 +697,7 @@
                             </div>
                             <!-- <div>
                                 <h5 class="text-2xl font-bold text-gray-800 mb-8">Send us a Message</h5>
-                                <form class="space-y-6" data-readdy-form="true" id="contact-form">
+                                <form class="space-y-6" id="contact-form">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div><label class="block text-sm font-medium text-gray-700 mb-2" for="name">Full
                                                 Name *</label><input
@@ -763,10 +782,10 @@
                                 with expert guidance.</p>
                             <div class="flex space-x-4"><a
                                     class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-teal-600 transition-colors cursor-pointer"
-                                    href="https://linkedin.com" rel="nofollow" target="_blank"><i
+                                    href="https://www.linkedin.com/in/sangaiah-s-90b439251" rel="nofollow" target="_blank"><i
                                         class="ri-linkedin-fill"></i></a><a
                                     class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-teal-600 transition-colors cursor-pointer"
-                                    href="mailto:info@sksassociates.com"><i class="ri-mail-fill"></i></a><a
+                                    href="mailto:sangaiah2025@gmail.com"><i class="ri-mail-fill"></i></a><a
                                     class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-teal-600 transition-colors cursor-pointer"
                                     href="https://wa.me/917339441279" rel="nofollow" target="_blank"><i
                                         class="ri-whatsapp-fill"></i></a></div>
@@ -820,7 +839,7 @@
                                 <div class="flex items-center space-x-3"><i
                                         class="ri-mail-line text-teal-400 text-lg"></i><a
                                         class="text-gray-300 hover:text-teal-400 transition-colors cursor-pointer"
-                                        href="mailto:info@sksassociates.com">info@sksassociates.com</a>
+                                        href="mailto:sangaiah2025@gmail.com">sangaiah2025@gmail.com</a>
                                 </div>
                                 <div class="flex items-start space-x-3"><i
                                         class="ri-time-line text-teal-400 text-lg mt-1"></i>
@@ -860,7 +879,7 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js" type="script"></script>
+    <script src="js/script.js" ></script>
 </body>
 
 </html>
